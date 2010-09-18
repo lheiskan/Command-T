@@ -2,6 +2,8 @@
 
 CONTENTS                                        *command-t-contents*
 
+
+
  1. Introduction            |command-t-intro|
  2. Requirements            |command-t-requirements|
  3. Installation            |command-t-installation|
