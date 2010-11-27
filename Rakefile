@@ -9,7 +9,7 @@ task :default => :spec
 
 desc 'Run specs'
 task :spec do
-  system 'bin/rspec spec'
+  system 'rspec spec'
   bail_on_failure
 end
 

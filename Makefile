@@ -8,7 +8,7 @@ vimfiles    := $(shell find plugin -name '*.vim')
 vimball:	command-t.vba
 
 command-t.vba: $(rubyfiles) $(cfiles) $(cheaders) $(depends) $(txtfiles) $(vimfiles)
-	mkvimball $(basename $@) $^
+	bin/mkvimball $(basename $@) $^
 
 .PHONY: spec
 spec:

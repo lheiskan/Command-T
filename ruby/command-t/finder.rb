@@ -22,7 +22,7 @@
 # POSSIBILITY OF SUCH DAMAGE.
 
 require 'command-t/ext' # CommandT::Matcher
-require 'command-t/scanner'
+require 'command-t/bwscanner'
 
 module CommandT
   # Encapsulates a Scanner instance (which builds up a list of available files
@@ -30,7 +30,7 @@ module CommandT
   # on a search string).
   class Finder
     def initialize path = Dir.pwd, options = {}
-      @scanner = Scanner.new path, options
+      @scanner = BwScanner.new path, options
       @matcher = Matcher.new @scanner, options
     end
 
